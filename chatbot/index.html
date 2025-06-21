@@ -19,7 +19,7 @@
       align-items: center;
     }
 
-    .chat-wrapper {
+    .container {
       display: flex;
       background: #1e1e1e;
       border-radius: 12px;
@@ -30,50 +30,11 @@
       overflow: hidden;
     }
 
-    .menu-preguntas {
-      width: 280px;
-      background: #262626;
-      padding: 20px;
-      overflow-y: auto;
-      border-right: 1.5px solid #fde61e;
-    }
-
-    .menu-preguntas h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      text-shadow: 0 0 8px #fde61e;
-      text-align: center;
-    }
-
-    .menu-preguntas button {
-      width: 100%;
-      margin-bottom: 10px;
-      background-color: #fde61e;
-      border: none;
-      padding: 10px;
-      border-radius: 8px;
-      font-weight: 600;
-      color: #000;
-      cursor: pointer;
-      box-shadow: 0 0 8px #fde61e;
-      transition: background-color 0.3s ease;
-      text-align: left;
-      font-size: 0.9rem;
-    }
-
-    .menu-preguntas button:hover {
-      background-color: #de3b34;
-      color: #fff;
-      box-shadow: 0 0 15px #de3b34;
-    }
-
     .chat-container {
-      flex-grow: 1;
+      flex: 1;
       display: flex;
       flex-direction: column;
       padding: 20px;
-      color: #fde61e;
     }
 
     header {
@@ -174,24 +135,48 @@
       color: #fff;
       box-shadow: 0 0 15px #de3b34;
     }
+
+    .questions-list {
+      width: 280px;
+      background: #262626;
+      border-left: 1.5px solid #fde61e;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .questions-list h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      text-shadow: 0 0 8px #fde61e;
+      text-align: center;
+    }
+
+    .questions-list button {
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: #fde61e;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #000;
+      cursor: pointer;
+      box-shadow: 0 0 8px #fde61e;
+      transition: background-color 0.3s ease;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .questions-list button:hover {
+      background-color: #de3b34;
+      color: #fff;
+      box-shadow: 0 0 15px #de3b34;
+    }
   </style>
 </head>
 <body>
-  <div class="chat-wrapper">
-    <div class="menu-preguntas">
-      <h2>Preguntas posibles</h2>
-      <button onclick="autoPregunta('¿Quién ganó el Mundial 2022?')">¿Quién ganó el Mundial 2022?</button>
-      <button onclick="autoPregunta('¿Cuál es el mejor jugador del mundo?')">¿Cuál es el mejor jugador del mundo?</button>
-      <button onclick="autoPregunta('¿Cuántos jugadores hay en un equipo de fútbol?')">¿Cuántos jugadores hay en un equipo de fútbol?</button>
-      <button onclick="autoPregunta('¿Cuánto dura un partido de fútbol?')">¿Cuánto dura un partido de fútbol?</button>
-      <button onclick="autoPregunta('¿Qué es un penal?')">¿Qué es un penal?</button>
-      <button onclick="autoPregunta('¿Qué es el fuera de lugar?')">¿Qué es el fuera de lugar?</button>
-      <button onclick="autoPregunta('¿Quién ha ganado más mundiales?')">¿Quién ha ganado más mundiales?</button>
-      <button onclick="autoPregunta('¿Qué es la Champions League?')">¿Qué es la Champions League?</button>
-      <button onclick="autoPregunta('¿Qué significa FIFA?')">¿Qué significa FIFA?</button>
-      <button onclick="autoPregunta('¿Qué es un clásico en fútbol?')">¿Qué es un clásico en fútbol?</button>
-    </div>
-
+  <div class="container">
     <div class="chat-container">
       <header>
         <h1>⚽ ChatBot Futbolero</h1>
@@ -211,7 +196,22 @@
         <button type="submit">Enviar</button>
       </form>
     </div>
+
+    <aside class="questions-list">
+      <h2>Preguntas posibles</h2>
+      <button onclick="autoPregunta('¿Quién ganó el Mundial 2022?')">¿Quién ganó el Mundial 2022?</button>
+      <button onclick="autoPregunta('¿Cuál es el mejor jugador del mundo?')">¿Cuál es el mejor jugador del mundo?</button>
+      <button onclick="autoPregunta('¿Cuántos jugadores hay en un equipo de fútbol?')">¿Cuántos jugadores hay en un equipo de fútbol?</button>
+      <button onclick="autoPregunta('¿Cuánto dura un partido de fútbol?')">¿Cuánto dura un partido de fútbol?</button>
+      <button onclick="autoPregunta('¿Qué es un penal?')">¿Qué es un penal?</button>
+      <button onclick="autoPregunta('¿Qué es el fuera de lugar?')">¿Qué es el fuera de lugar?</button>
+      <button onclick="autoPregunta('¿Quién ha ganado más mundiales?')">¿Quién ha ganado más mundiales?</button>
+      <button onclick="autoPregunta('¿Qué es la Champions League?')">¿Qué es la Champions League?</button>
+      <button onclick="autoPregunta('¿Qué significa FIFA?')">¿Qué significa FIFA?</button>
+      <button onclick="autoPregunta('¿Qué es un clásico en fútbol?')">¿Qué es un clásico en fútbol?</button>
+    </aside>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
