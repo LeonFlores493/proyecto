@@ -60,6 +60,17 @@
       animation: slideUp 2.5s ease-out;
     }
 
+    @keyframes fadeSlideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .main-button {
       display: inline-block;
       margin-top: 20px;
@@ -73,7 +84,7 @@
       text-decoration: none;
       transition: all 0.3s ease;
       box-shadow: 0 0 10px #fde61e;
-      animation: slideUp 2.5s ease-out; /* Animación añadida */
+      animation: fadeSlideUp 1.5s ease forwards;
     }
 
     .main-button:hover {
@@ -170,7 +181,6 @@
       <h1>LEÓN FLORES</h1>
       <h2>Construye Páginas Web</h2>
 
-      <!-- Botón principal con animación -->
       <a class="main-button" href="https://LeonFlores493.github.io/proyecto/Proyecto%20Rene/" target="_blank" rel="noopener noreferrer">
         Ir a Proyecto
       </a>
