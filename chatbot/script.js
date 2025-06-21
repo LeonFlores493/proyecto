@@ -51,6 +51,7 @@ document.getElementById("chat-form").addEventListener("submit", function (e) {
   input.value = "";
 });
 
+// Función para agregar mensajes al chat
 function agregarMensaje(remitente, texto) {
   const chatBox = document.getElementById("chat-box");
   const mensaje = document.createElement("p");
@@ -58,4 +59,15 @@ function agregarMensaje(remitente, texto) {
   mensaje.textContent = texto;
   chatBox.appendChild(mensaje);
   chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+// Función para auto escribir y enviar la pregunta al hacer clic en el menú
+function autoPregunta(text) {
+  const input = document.getElementById('user-input');
+  input.value = text;
+  input.focus();
+
+  // Simular envío automático
+  const event = new Event('submit', { bubbles: true, cancelable: true });
+  document.getElementById('chat-form').dispatchEvent(event);
 }
