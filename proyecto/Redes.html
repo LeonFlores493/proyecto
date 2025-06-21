@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DentCare</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: url('https://media.istockphoto.com/id/453087707/es/foto/instrumentos-dentales-y-herramientas-con-bandeja-de-dentista-polietileno.jpg?s=612x612&w=0&k=20&c=2GHAzJ-Mj_JZjdbdwVYGZ3A4n8IwAxAi0juCW6A7kgM=') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.filtro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(225, 213, 231, 0.4); /* Lila clarito translúcido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marco {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 5px solid #c4a4d6; /* Lila clarito */
+    border-radius: 20px;
+    padding: 40px;
+    text-align: left; /* Alineado a la izquierda */
+    box-shadow: 0 0 20px rgba(162, 130, 191, 0.4);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #6a1b9a; /* Lila oscuro */
+    margin-bottom: 10px;
+    text-align: center; /* Centrado para título */
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: justify; /* Justificación completa */
+}
+
+.redes {
+    text-align: center; /* Para centrar los enlaces */
+}
+
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #e1d5e7; /* Lila clarito */
+    color: #6a1b9a; /* Lila fuerte */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    border: 2px solid #c4a4d6;
+}
+
+.redes a:hover {
+    background-color: #d6c1e0; /* Lila más fuerte */
+    color: #4a0c69; /* Lila más oscuro */
+}
+
+.redes a i {
+    font-size: 18px;
+}
+</style>
+</head>
+<body>
+<div class="filtro">
+    <div class="marco">
+        <h1>Redes Sociales de DentCare</h1>
+        <p>Tu sonrisa, nuestro compromiso.</p>
+        <div class="redes">
+            <a href="https://www.tiktok.com/@dentcare8?_t=ZS-8vxvo1MxivY&_r=1" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://www.instagram.com/dent_caremx?igsh=cTk4MG91cnZhMGtx" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="inicio.html" class="back">
+                <i class="fas fa-home"></i> Volver al inicio
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

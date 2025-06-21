@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DentCare - Bienvenido</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .background {
+    background-image: url('img/index.jpg'); /* Ajusta la ruta si es necesario */
+    background-size: cover;
+    background-position: center;
+    background-position-y: -190px; /* Para que la imagen suba un poco */
+    height: 100%;
+    filter: blur(8px);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .background::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(200, 162, 200, 0.3); /* Lila semitransparente opcional */
+  }
+
+  .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #6a1b9a; /* Morado claro */
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #6a1b9a; /* Morado */
+  }
+
+  p.slogan {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #6a1b9a;
+  }
+
+  p.cd-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #6a1b9a;
+  }
+
+  .btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #9c27b0; /* Botón morado */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #7b1fa2; /* Morado más oscuro al pasar el mouse */
+  }
+</style>
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="content">
+    <h1>DentCare Dental</h1>
+    <p class="slogan">Tu salud dental, nuestra prioridad</p>
+    <button class="btn" onclick="location.href='inicio.html'">Entrar</button>
+    <p class="cd-info">C.D. Beatriz Cruz</p>
+  </div>
+
+</body>
+</html>
